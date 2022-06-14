@@ -17,12 +17,13 @@ main {
 
 input[type="text"] {
   background: black;
+  color: currentColor;
   border: 1px solid #fff3;
   padding: 0.5rem;
 }
 
 main > input {
-  width: 100%;
+  width: calc(100% - 1rem - 2px);
 }
 
 p {
@@ -42,4 +43,24 @@ a:visited {
 
 a:hover {
   color: #ffbe0b;
+}
+
+.jokes-container {
+  display: grid;
+  gap: 1rem;
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.joke {
+  border: 1px solid #fff4;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  font-size: 2rem;
+  line-height: 1.6;
+  word-wrap: break-word;
+  hyphens: auto;
+  width: calc(100% - 2rem - 2px);
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
